@@ -11,11 +11,11 @@ const AppContent = () => {
     ...(isDark ? DarkTheme : DefaultTheme),
     colors: {
       ...(isDark ? DarkTheme.colors : DefaultTheme.colors),
-      primary: theme.primary,
-      background: theme.background,
-      card: theme.surface,
-      text: theme.text,
-      border: theme.border,
+      primary: theme?.primary || DefaultTheme.colors.primary,
+      background: theme?.background || DefaultTheme.colors.background,
+      card: theme?.surface || DefaultTheme.colors.card,
+      text: theme?.text || DefaultTheme.colors.text,
+      border: theme?.border || DefaultTheme.colors.border,
     },
   };
 

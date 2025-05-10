@@ -48,7 +48,7 @@ export const TouchableComponent: React.FC<TouchableComponentProps> = ({
       ]}
       {...props}
     >
-      {children}
+      {children || null}
     </Pressable>
   );
 };
